@@ -112,14 +112,17 @@
       }
       /* Table Styles */
       .table-container {
-        overflow: hidden; /* Ensures rounded corners display without cutting */
-        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+        border-radius: 15px; /* Add full border-radius for both top and bottom */
+        border: 1px solid #e2e8f0;
       }
 
       .table-container table {
         border-collapse: collapse;
         text-align: left;
         width: 100%;
+        border-radius: 13px;
+        border: 1px solid #e2e8f0;
       }
 
       .table-container th:first-child {
@@ -128,6 +131,14 @@
 
       .table-container th:last-child {
         border-top-right-radius: 10px;
+      }
+
+      .table-container .button-row td:first-child {
+        border-bottom-left-radius: 10px;
+      }
+
+      .table-container .button-row td:last-child {
+        border-bottom-right-radius: 10px;
       }
 
       .table-container th,
