@@ -23,6 +23,13 @@
     <style>
       /* #### Mobile Phones Portrait #### */
       /* #### iPhone 4+ Portrait or Landscape #### */
+
+      @media (min-width: 600px) and (max-width: 1024px) {
+        .domain-pill img {
+          margin-bottom: 0;
+          margin-top: 5px;
+        }
+      }
       @media only screen and (max-width: 580px) {
         /* Adjust font sizes */
         .domain-container {
@@ -41,11 +48,6 @@
           width: 16px; /* Smaller icon size */
           height: 16px; /* Smaller icon size */
           margin-right: 4px; /* Reduce margin */
-        }
-
-        /* Centering the domain pills for better layout on small screens */
-        .domain-container {
-          text-align: center; /* Center the domain pills */
         }
 
         .domain-pill {
@@ -1587,6 +1589,7 @@
                                       ></table>
                                       <!-- Domain Pill -->
                                       <div
+                                        class="domain-container"
                                         style="
                                           font-size: 12px;
                                           font-weight: 600;
@@ -1597,6 +1600,7 @@
                                         "
                                       >
                                         <span
+                                          class="domain-pill"
                                           style="
                                             border: 1px solid;
                                             padding: 2px 8px;
@@ -1631,6 +1635,7 @@
                                           <span>Infidigit SEO India</span>
                                         </span>
                                         <span
+                                          class="domain-pill"
                                           style="
                                             border: 1px solid;
                                             padding: 2px 8px;
