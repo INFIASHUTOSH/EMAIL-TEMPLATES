@@ -1,0 +1,4 @@
+ISSUES
+- Iphone mobile snippet image
+- tablet forward pill icons 
+- Other devices not checked
